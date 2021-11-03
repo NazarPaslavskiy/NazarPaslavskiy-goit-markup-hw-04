@@ -60,20 +60,12 @@
   .site-item-link:focus {
     color: var(--accent-color);
   }
-  
   .contact:hover,
   .contact:focus {
     color: var(--accent-color);
   }
   
-  .btn-shadow:hover,
-  .btn-shadow:focus {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  }
   
-  .cursor {
-    cursor: pointer;
-  }
   .current{
     color: var(--accent-color)
   }
@@ -95,19 +87,16 @@
   
   .header-conntacts {
     display: flex;
-    margin-left: auto;
-    align-items: center;;
-  }
-  
-  
-  
+    margin-left:auto;
+    align-items: center;
+  }  
   .nav-item:not(:last-child) {
     margin-right: 50px;
     display: flex;
     align-items: center;
 
   }
-  
+
   .header {
     padding-top: 24px;
     padding-bottom: 25px;
@@ -219,7 +208,6 @@
   .section-hero {
     max-width: 1600px;
     background-color: #2f303a;
-    height: 600px;
     align-items: center;
     margin-right: auto;
     margin-left: auto;
@@ -343,9 +331,8 @@
     margin-right: 30px;
   }
  /* -----------------box-icon---------------- */
- .box-antena::before{
+ .box-antena{
   display:block;
-  content: "";
   width: 270px;
   height: 120px;
   background-color:#F5F4FA;
@@ -357,9 +344,8 @@
   background-position:center;
   background-size: 70px;
 }
-.box-clock::before{
+.box-clock{
   display:block;
-  content: "";
   width: 270px;
   height: 120px;
   background-color:#F5F4FA;
@@ -371,9 +357,8 @@
   background-position:center;
   background-size: 70px;
 }
-.box-diagram::before{
+.box-diagram{
   display:block;
-  content: "";
   width: 270px;
   height: 120px;
   background-color:#F5F4FA;
@@ -385,9 +370,8 @@
   background-position:center;
   background-size: 70px;
 }
-.box-astronaut::before{
+.box-astronaut{
   display:block;
-  content: "";
   width: 270px;
   height: 120px;
   background-color:#F5F4FA;
@@ -399,37 +383,43 @@
   background-size: 70px;
 }
  
-.logo-mail::before{
+.logo-mail {
   display:flex;
   content:"";
   width: 16px;
   height: 12px;
-  background-image: url(../icomoon/SVG/envelope\ \(hover\)\ \(1\).svg);
+  background-image:url(../img/envelope\ \(hover\)\ \(1\).svg);
   background-repeat: no-repeat;
   background-position:center;
-  margin-right:10px;
+  margin-right: 10px;
+  fill: #757575;
 }
 
-.logo-tel::before{
+.logo-tel{
   display:flex;
   content:"";
   width: 10px;
   height: 16px;
-  background-image: url(../icomoon/SVG/Vector\ \(1\).svg);
+  background-image: url(../img/Vector\ \(1\).svg);
   background-repeat: no-repeat;
   background-position:center;
   margin-right: 10px;
-  color: #2196f3;
+
   }
-  
-  .logo.tel::before:focus,
-  .logo.tel::before:hover{
-    color: var(--accent-color);
+  .logo-tel{
+    fill: #757575;
+   }
+   .logo-tel:hover,
+   .logo-tel:focus{
+     fill: #2196f3;}
+ 
+
+  .logo-mail{
+   fill:c;
   }
-  .logo.tel:focus,
-  .logo.tel:hover{
-    color: var(--primary-text-color);
-  }
+  .logo-mail:focus,
+  .logo-mail:hover{
+    fill: #2196f3;}
 
   .about-title {
     font-weight: 700;
@@ -637,10 +627,9 @@
   }
   
   .btn-item {
-    height: 38px;
+    border:transparent;
     min-width: 73px;
     background: #f5f4fa;
-    border: 1px var(--second-text-color);
     border-radius: 4px;
     padding: 6px 22px;
   }
@@ -658,13 +647,8 @@
   
   .btn-white:focus,
   .btn-white:hover {
-    font-family: Roboto, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
+    cursor: pointer;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     color: var(--header-color);
     background-color: var(--accent-color);
   }
@@ -703,7 +687,10 @@
     margin-right: 30px;
     margin-bottom: 30px;
   }
-  
+  .gallery-link:hover,
+  .gallery-link:focus {
+  box-shadow: 0px 1px 1px rgba(212, 69, 69, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
   .gallery-card {
     padding: 20px 24px 20px 24px;
     border-left: 1px solid #eeeeee;
